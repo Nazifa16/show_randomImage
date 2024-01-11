@@ -28,6 +28,15 @@ const images = [
   "https://i.pinimg.com/564x/08/78/79/087879d4c845a25cde7546d332fbfddb.jpg",
   "https://i.pinimg.com/564x/a3/98/35/a398356260c5facf9bb0b9c8427f1817.jpg",
   "https://i.pinimg.com/564x/06/2c/d7/062cd7c9fd1af6d1c4ddf04b3a7b39a6.jpg",
+  "https://i.pinimg.com/564x/41/a2/2d/41a22da8d84346530129074befc5bbd6.jpg",
+  "https://i.pinimg.com/564x/b5/22/94/b5229414463440ecacae6367403d0801.jpg",
+  "https://i.pinimg.com/564x/aa/0b/f9/aa0bf9e24a04597f4cee4f1722f574bb.jpg",
+  "https://i.pinimg.com/564x/98/18/ff/9818fffec938e6d6182613066c3d9d07.jpg",
+  "https://i.pinimg.com/564x/77/b5/29/77b529e722e600887ae2388e46fb4e5b.jpg",
+  "https://i.pinimg.com/564x/af/6f/60/af6f60424ac541d674559e008a5f60bc.jpg",
+  "https://i.pinimg.com/564x/c9/e8/9e/c9e89e66e8b59b13397c925c73d656c4.jpg",
+  "https://i.pinimg.com/564x/34/53/36/3453361fbfcd6f2eaff20cd4257abf4e.jpg",
+  "https://i.pinimg.com/564x/c2/50/a2/c250a217d18302e80f2424366f98b4e8.jpg",
 ];
 
 async function ShowPostImg() {
@@ -42,7 +51,7 @@ async function ShowPostImg() {
         const randomIndex = Math.floor(Math.random() * images.length);
         const randomImage = images[randomIndex];
         return `
-          <div class=" d-flex flex-column justify-content-center shadow-lg p-3 mb-5 bg-white rounded" style="width: 28rem;">
+          <div class=" d-flex flex-column justify-content-center shadow-lg p-3 mb-5 bg-white rounded" style="width: 26rem; height:38rem">
             <img class="" src="${randomImage}" alt="RandomImg">
             <div class="card-body mt-3">
               <p class="card-text h4">${post.id}</p>
