@@ -51,7 +51,7 @@ async function ShowPostImg() {
         const randomIndex = Math.floor(Math.random() * images.length);
         const randomImage = images[randomIndex];
         return `
-          <div class=" d-flex flex-column justify-content-center shadow-lg p-3 mb-5 bg-white rounded" style="width: 24rem; height:34rem">
+          <div class=" d-flex flex-column justify-content-center shadow-lg p-3 mb-5 bg-white rounded" style="width: 24rem; height:36rem">
             <img class="" src="${randomImage}" alt="RandomImg">
             <div class="card-body mt-3">
               <p class="card-text h4">${post.id}</p>
